@@ -1,0 +1,268 @@
+.header {
+  margin-bottom: 60px;
+}
+
+.header h1, .header h2, .header h3, .header h4, .header h5 {
+  float: left;
+  margin-top: 5px;
+}
+
+/* Custom navbar stuff */
+/* search input */
+.navbar-inverse {
+  /* navbar settings and logout icons */
+  /* notification menu with custom dropdowns */
+  /* navbar popup dialog */
+}
+.navbar-inverse {
+  #menu-folder {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+
+    .btn-icon {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 50px;
+      height: 48px;
+      line-height: 59px;
+      text-align: center;
+      background-color: $navbar-menu-folder-background-color;
+      border-right: 1px solid $navbar-menu-folder-border-color;
+      color: $navbar-menu-folder-color;
+      &:hover {
+        cursor: pointer;
+        background: $navbar-menu-folder-hover-background-color;
+        color: $navbar-menu-folder-hover-color;
+      }
+      i {
+        font-size: 25px;
+      }
+    }
+  }
+}
+.navbar-inverse .navbar-brand {
+  padding: 0px 10px;
+  padding-top: 8px;
+
+  .app-name {
+    color: #ccc;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: all .2s ease-in-out;
+  }
+  &:hover .app-name {
+    color: #fff;
+  }
+}
+.navbar-inverse .quick-search-form {
+  .tt-dropdown-menu {
+    background-color: #000;
+    border-color: #000;
+    margin-top: 7px;
+    width: 420px;
+  }
+  .tt-suggestion {
+    color: #fff;
+  }
+  .tt-suggestion.tt-is-under-cursor a {
+    color: #fff;
+  }
+}
+.navbar-inverse input.search {
+  height: 27px;
+  width: 220px;
+  padding: 3px 6px;
+  background-color: #333;
+  outline: none;
+  border: 0;
+  position: relative;
+  top: 9px;
+  color: #000;
+  font-size: 13px;
+  margin-right: 40px;
+  transition: all .2s ease-in-out;
+}
+.navbar-inverse input.search:focus {
+  width: 420px;
+}
+.navbar-inverse input.search:focus {
+  background-color: #fff;
+  border: 0;
+  color: #000;
+}
+.navbar-inverse .settings i {
+  color: #9ba3ad;
+  font-size: 21px;
+}
+.navbar-inverse .dropdown-toggle.dropdown-user {
+  position: relative;
+  padding-left: 50px;
+  text-transform: uppercase;
+  font-weight: normal;
+
+  img {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    border-radius: 50%;
+  }
+}
+.navbar-inverse .notification-dropdown {
+  position: relative;
+}
+.navbar-inverse .notification-dropdown i {
+  font-size: 17px;
+}
+.navbar-inverse .notification-dropdown .count {
+  position: absolute;
+  top: 1px;
+  left: 58%;
+  background: $navbar-notification-count-background-color;
+  padding: 0px 5px;
+  border-radius: 30px;
+  color: #fff;
+  line-height: 16px;
+  z-index: 9999;
+  text-align: center;
+  font-size: 11px;
+}
+.navbar-inverse .notification-dropdown .count.empty {
+  background: $navbar-notification-count-empty-background-color;
+}
+.navbar-inverse .pop-dialog {
+  position: absolute;
+  right: -10px;
+  top: 57px;
+  display: none;
+  /* navbar popup dialog for notifications */
+  /* navbar popup dialog for messages */
+}
+.navbar-inverse .pop-dialog.is-visible {
+  display: block;
+  -webkit-animation: reveal .2s ease-out;
+  -moz-animation: reveal .2s ease-out;
+  animation: reveal .2s ease-out;
+}
+.navbar-inverse .pop-dialog .close-icon {
+  float: right;
+  text-decoration: none;
+  z-index: 9999;
+  position: relative;
+  color: $navbar-notification-popover-color;
+}
+.navbar-inverse .pop-dialog .footer {
+  border-top: 1px solid $navbar-notification-popover-item-border-color;
+  margin: 0px 0px -10px 0px;
+}
+.navbar-inverse .pop-dialog .footer a {
+  background-color: $navbar-notification-popover-footer-background-color;
+  padding: 12px 20px;
+  text-align: center;
+  display: block;
+  color: $navbar-notification-popover-color;
+  text-decoration: none;
+  &:hover {
+    background-color: $navbar-notification-popover-item-hover-background-color;
+  }
+}
+.navbar-inverse .pop-dialog .notifications {
+  width: 330px;
+  margin: 10px -10px 0px -10px;
+}
+.navbar-inverse .pop-dialog .notifications h3 {
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: $navbar-notification-popover-color;
+  i {
+    font-size: 11px;
+    margin-right: 5px;
+  }
+}
+.navbar-inverse .pop-dialog .notifications .ui-slider {
+  width: 90%;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+.navbar-inverse .pop-dialog .notifications .item {
+  display: block;
+  padding: 10px 0px 8px 10px;
+  border-top: 1px solid $navbar-notification-popover-item-border-color;
+  color: $navbar-notification-popover-color;
+  text-decoration: none;
+  position: relative;
+}
+.navbar-inverse .pop-dialog .notifications .item:hover {
+  background: $navbar-notification-popover-item-hover-background-color;
+}
+.navbar-inverse .pop-dialog .notifications .item > i {
+  color: $navbar-notification-popover-icon-color;
+  font-size: 18px;
+}
+.navbar-inverse .pop-dialog .notifications .item > i.icon-user {
+  left: 18px;
+}
+.navbar-inverse .pop-dialog .notifications .item .time {
+  float: right;
+  color: $navbar-notification-popover-color;
+  font-size: 11px;
+  min-width: 60px;
+  margin-right: 10px;
+}
+.navbar-inverse .pop-dialog .notifications .item .time i {
+  font-size: 13px;
+  color: $navbar-notification-popover-icon-color;
+  margin-right: 1px;
+}
+.navbar-inverse .pop-dialog .notifications ul {
+  padding: 0;
+  max-height: 350px;
+  overflow-y: scroll;
+}
+.navbar-inverse .pop-dialog .notifications .notification {
+  display: block;
+  padding: 10px 0px 8px 20px;
+  border-top: 1px solid $navbar-notification-popover-item-border-color;
+  color: $navbar-notification-popover-color;
+  text-decoration: none;
+  position: relative;
+  &.unread {
+    background-color: $navbar-notification-popover-footer-background-color;
+  }
+}
+.navbar-inverse .pop-dialog .notifications .notification:hover,
+.navbar-inverse .pop-dialog .notifications .notification.unread:hover {
+  background: $navbar-notification-popover-item-hover-background-color;
+}
+.navbar-inverse .pop-dialog .notifications .notification .notification-status {
+  float: right;
+  padding-right: 14px;
+  .unread {
+    font-size: 11px;
+    color: $navbar-notification-popover-icon-color;
+  }
+}
+.navbar-inverse .pop-dialog .notifications .notification .notification-body {
+  padding-right: 30px;
+  a.target {
+    color: white;
+    display: block;
+    text-decoration: none;
+    .time {
+      color: $navbar-notification-popover-icon-color;
+      text-align: right;
+      font-size: 10px;
+      i.icon-time {
+        font-size: 10px;
+      }
+    }
+  }
+}

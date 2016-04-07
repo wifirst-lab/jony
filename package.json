@@ -1,0 +1,21 @@
+{
+  "name": "jony",
+  "version": "1.0.0",
+  "description": "jony-assets",
+  "scripts": {
+    "build-js": "node build-tasks/build.js",
+    "copy-assets": "node build-tasks/copy-assets.js",
+    "clean": "rm -rf dist",
+    "setup": "mkdir -p dist/js",
+    "reset": "npm run clean && npm run setup",
+    "build": "npm-run-all reset --parallel build-js copy-assets"
+  },
+  "license": "LicenceRef-LICENCE",
+  "devDependencies": {
+    "concat": "^1.0.0",
+    "fs-extra": "^0.26.2",
+    "path": "latest",
+    "uglifyjs": "latest",
+    "npm-run-all": "latest"
+  }
+}

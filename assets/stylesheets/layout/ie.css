@@ -1,0 +1,6 @@
+/* Fixes IE8 password problem */
+form input {
+  *background-color: #ffffff !important;
+  *color: #333 !important;
+  *font-family: Arial !important;
+}

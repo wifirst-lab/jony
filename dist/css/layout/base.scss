@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(https://themes.googleusercontent.com/static/fonts/roboto/v9/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://themes.googleusercontent.com/static/fonts/roboto/v9/d-6IYplOFocCacKzxwXSOLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  background-color: $sidebar-background-color;
+  position: relative;
+  margin: 0px;
+  font-size: 12px;
+  padding: 0px;
+  padding-top: 48px;
+  /*-webkit-font-smoothing: antialiased;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  margin: 0;
+  line-height: inherit;
+  color: #29323d;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small {
+  font-style: italic;
+}
+
+small {
+  color:#999;
+}
+
+hr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+}
+
+fieldset legend {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+  margin-bottom: 10px;
+
+  a {
+    font-weight: normal;
+  }
+}

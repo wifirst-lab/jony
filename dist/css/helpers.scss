@@ -1,0 +1,7 @@
+@function lighten-or-darken($background-color, $lightness) {
+  @if lightness($background-color) < $lightness {
+    @return scale-color($background-color, $lightness: 95%);
+  } @else {
+    @return scale-color($background-color, $lightness: -80%);
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "jony",
+  "main": "./dist/js/jony.min.js",
+  "ignore": ["**/.*"],
+  "dependencies": {}
+}

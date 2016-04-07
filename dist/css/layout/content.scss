@@ -1,0 +1,19 @@
+.content {
+  min-width: 400px;
+  min-height: 100%;
+  padding: 15px 0;
+  padding-top: 0px;
+  overflow: visible;
+  position: relative;
+  background: $content-background-color;
+  border-left: 1px solid $content-border-color;
+  -webkit-transition: margin-left .3s ease;
+  -moz-transition: margin-left .3s ease;
+  -o-transition: margin-left .3s ease;
+  -ms-transition: margin-left .3s ease;
+  transition: margin-left .3s ease;
+  margin-left: 80px;
+}
+.content > section {
+  padding-top:15px;
+}
