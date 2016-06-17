@@ -2,20 +2,30 @@
   "name": "jony",
   "version": "1.0.0",
   "description": "jony-assets",
-  "scripts": {
-    "build-js": "node build-tasks/build.js",
-    "copy-assets": "node build-tasks/copy-assets.js",
-    "clean": "rm -rf dist",
-    "setup": "mkdir -p dist/js",
-    "reset": "npm run clean && npm run setup",
-    "build": "npm-run-all reset --parallel build-js copy-assets"
-  },
   "license": "LicenceRef-LICENCE",
+  "scripts": {
+    "clean-dist": "rm -rf dist tmp",
+    "clean-cdn": "rm -rf cdn tmp",
+    "setup-dist": "mkdir -p tmp/css tmp/js dist/js dist/css",
+    "setup-cdn": "mkdir -p tmp/css tmp/js cdn/js cdn/css",
+    "reset-dist": "npm run clean-dist && npm run setup-dist",
+    "reset-cdn": "npm run clean-cdn && npm run setup-cdn",
+    "build-js-dist": "node build-tasks/build-js-dist.js",
+    "build-js-cdn": "node build-tasks/build-js-cdn.js",
+    "copy-assets-dist": "node build-tasks/copy-assets-dist.js",
+    "copy-assets-cdn": "node build-tasks/copy-assets-cdn.js",
+    "build-sass-cdn": "node build-tasks/build-sass-cdn.js",
+    "build-color-cdn": "node build-tasks/build-color-cdn.js",
+    "build-dist": "npm-run-all reset-dist --parallel build-js-dist copy-assets-dist",
+    "build-cdn": "npm-run-all reset-cdn --parallel build-js-cdn copy-assets-cdn"
+  },
   "devDependencies": {
     "concat": "^1.0.0",
     "fs-extra": "^0.26.2",
+    "lodash": "^3.10.1",
+    "node-sass": "^3.7.0",
+    "npm-run-all": "latest",
     "path": "latest",
-    "uglifyjs": "latest",
-    "npm-run-all": "latest"
+    "uglifyjs": "latest"
   }
 }

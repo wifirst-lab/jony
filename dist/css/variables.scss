@@ -1,20 +1,30 @@
 // Jony main color
 $main-color: #428bca !default;
 
+$darker_color: #428bca !default;
+$lighter-color: #428bca !default;
+
+$sidebar-background-color: #555 !default;
+
 // Navbar
-$navbar-background-color: #000000 !default;
-$navbar-link-color: #d6d6d6 !default;
+// $navbar-background-color: #000000 !default;
+$navbar-background-color: $main-color !default;
+// $navbar-link-color: #d6d6d6 !default;
+$navbar-link-color: #ffffff;
 $navbar-notification-count-empty-background-color: #9ba3ad !default;
 $navbar-notification-count-background-color: #ff6600 !default;
-$navbar-notification-popover-background-color: #000000 !default;
-$navbar-notification-popover-border-color: #000000 !default;
+// $navbar-notification-popover-background-color: #000000 !default;
+$navbar-notification-popover-background-color: $main-color !default;
+// $navbar-notification-popover-border-color: #000000 !default;
+$navbar-notification-popover-border-color: $main-color !default;
 $navbar-notification-popover-color: #ffffff !default;
-$navbar-border-color: darken($navbar-background-color, 10%) !default;
+$navbar-border-color: $main-color !default;
 $navbar-link-hover-color: lighten($navbar-link-color, 10%) !default;
-$navbar-menu-folder-background-color: lighten($navbar-background-color, 13.5%) !default;
+$navbar-menu-folder-background-color: $main-color !default;
 $navbar-menu-folder-border-color: $navbar-background-color !default;
-$navbar-menu-folder-color: invert($navbar-menu-folder-background-color) !default;
-$navbar-menu-folder-hover-background-color: transparentize($main_color, 0.5) !default;
+// $navbar-menu-folder-color: invert($navbar-menu-folder-background-color) !default;
+$navbar-menu-folder-color: $main-color;
+$navbar-menu-folder-hover-background-color: $main-color !default;
 $navbar-menu-folder-hover-color: lighten($navbar-menu-folder-color, 50%) !default;
 $navbar-notification-popover-item-border-color: lighten($navbar-notification-popover-background-color, 33.5%) !default;
 $navbar-notification-popover-item-hover-background-color: lighten($navbar-notification-popover-background-color, 26.5%) !default;
@@ -22,7 +32,7 @@ $navbar-notification-popover-footer-background-color: lighten($navbar-notificati
 $navbar-notification-popover-icon-color: $main-color !default;
 
 // Sidebar
-$sidebar-background-color: $main-color !default;
+$sidebar-background-color: $sidebar-background-color !default;
 $sidebar-item-color: lighten-or-darken($main-color, 60%) !default;
 $sidebar-item-hover-color: lighten($sidebar-item-color, 20%) !default;
 $sidebar-item-border-color: darken($sidebar-background-color, 15%) !default;
