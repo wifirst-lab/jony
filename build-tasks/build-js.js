@@ -2,7 +2,7 @@ var path = require('path');
 var fs = require('fs-extra');
 var concat = require('concat');
 var child_process = require('child_process');
-var manifest = require('../manifest');
+var manifest = require('./manifest');
 
 function buildJs(targetDir, projectPath) {
   var paths = {
@@ -37,5 +37,4 @@ function buildJs(targetDir, projectPath) {
   };
 }
 
-
-module.exports = buildJs;
+buildJs('dist', require('path').dirname(__dirname))

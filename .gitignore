@@ -1,4 +1,4 @@
 /node_modules
 /tmp
-/cdn
+/dist
 .DS_Store

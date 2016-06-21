@@ -5,19 +5,13 @@
   "license": "LicenceRef-LICENCE",
   "scripts": {
     "clean-dist": "rm -rf dist tmp",
-    "clean-cdn": "rm -rf cdn tmp",
     "setup-dist": "mkdir -p tmp/css tmp/js dist/js dist/css",
-    "setup-cdn": "mkdir -p tmp/css tmp/js cdn/js cdn/css",
-    "reset-dist": "npm run clean-dist && npm run setup-dist",
-    "reset-cdn": "npm run clean-cdn && npm run setup-cdn",
-    "build-js-dist": "node build-tasks/build-js-dist.js",
-    "build-js-cdn": "node build-tasks/build-js-cdn.js",
-    "copy-assets-dist": "node build-tasks/copy-assets-dist.js",
-    "copy-assets-cdn": "node build-tasks/copy-assets-cdn.js",
-    "build-sass-cdn": "node build-tasks/build-sass-cdn.js",
-    "build-color-cdn": "node build-tasks/build-color-cdn.js",
-    "build-dist": "npm-run-all reset-dist --parallel build-js-dist copy-assets-dist",
-    "build-cdn": "npm-run-all reset-cdn --parallel build-js-cdn copy-assets-cdn"
+    "reset": "npm run clean-dist && npm run setup-dist",
+    "build-js": "node build-tasks/build-js.js",
+    "copy-assets": "node build-tasks/copy-assets.js",
+    "build-sass": "node build-tasks/build-sass.js",
+    "build-color": "node build-tasks/build-color.js",
+    "build": "npm-run-all reset --parallel build-js copy-assets"
   },
   "devDependencies": {
     "concat": "^1.0.0",

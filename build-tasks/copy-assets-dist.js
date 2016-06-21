@@ -1,1 +1,0 @@
-require('./helpers').copyAssets('dist', require('path').dirname(__dirname), ['css', 'fonts', 'images']);

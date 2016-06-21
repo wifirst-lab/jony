@@ -22,4 +22,4 @@ function copyAssets(targetDir, projectPath, assets) {
   });
 }
 
-module.exports = copyAssets;
+copyAssets('dist', require('path').dirname(__dirname), ['fonts', 'images'])

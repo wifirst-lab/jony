@@ -28,7 +28,7 @@ if (!args['fileName']) {
 var fileName = args['fileName'];
 var config = {
   rootFile: path.join(projectPath, 'assets/stylesheets/jony.scss'),
-  target: path.join(projectPath, 'cdn/css/' + fileName + '.min.css')
+  target: path.join(projectPath, 'dist/css/' + fileName + '.min.css')
 };
 
 var expectedColors = helpers.expectedColors;
