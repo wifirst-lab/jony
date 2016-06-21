@@ -11,7 +11,7 @@ Use css hex format for color (ex : #000000)
 
 The build result can be found in the dist folder.
 
-This dist folder can then be copied to your app public diurectory.
+This dist folder can then be copied to your app public directory.
 
 # CDN build, versionning and deploy to Wifirst CDN
 
